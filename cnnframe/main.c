@@ -14,8 +14,7 @@ int main(int argn, char* argv[]){
 	}
 	
 	IplImage* image = cvLoadImage(argv[1],0);	
-	//cvShowImage("1.jpg",image);
-	//cvWaitKey(0);
+
 
 	Net net;
 	FType jiu;
@@ -130,5 +129,7 @@ int main(int argn, char* argv[]){
 		}
 	}
 	printf("Is Likely: %d \n",j);
+	cvShowImage("1.jpg",image);
+	cvWaitKey(0);
 	return 0;
 }
